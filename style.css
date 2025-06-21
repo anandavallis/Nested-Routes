@@ -1,0 +1,158 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.app-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+/* Navigation Styles */
+.main-nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.main-nav button {
+    padding: 0.5rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #3498db;
+    transition: all 0.2s;
+}
+
+.main-nav button:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.main-nav button.active {
+    font-weight: bold;
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+/* Router Outlet Styles */
+.router-outlet {
+    min-height: 400px;
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    background-color: #fafafa;
+}
+
+.dashboard-nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.dashboard-nav button {
+    padding: 0.5rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #7f8c8d;
+}
+
+.dashboard-nav button:hover {
+    color: #34495e;
+}
+
+.dashboard-nav button.active {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+/* Dashboard Content Styles */
+.dashboard-content {
+    padding: 1rem;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.settings-form {
+    display: grid;
+    gap: 1rem;
+    max-width: 500px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 500;
+}
+
+.form-group select, 
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.analytics-card {
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+}
+
+.analytics-card h4 {
+    margin-top: 0;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.analytics-card p {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
